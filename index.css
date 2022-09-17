@@ -13,12 +13,12 @@ body {
   color: #ffffff;
 }
 
-.container {
+#container {
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .stopwatch {
@@ -64,23 +64,34 @@ body {
 
 .toggle-btn {
   background: #4cc2ff;
-  border: none;
-  border-radius: 50%;
 }
 
 .reset-btn {
   background: transparent;
-  border: none;
 }
 
 .btn {
   cursor: pointer;
   width: 5em;
   height: 5em;
-  /* margin: 5px; */
+  border-radius: 50%;
+  border: none;
 }
 
 .toggle {
   width: 3em;
   height: 3em;
+}
+
+#add-timer {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 2em;
+  width: 3em;
+  height: 3em;
+}
+
+#add-timer:hover {
+  border-color: #2c3347;
 }
